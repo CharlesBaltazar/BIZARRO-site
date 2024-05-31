@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=David+Libre:wght@400;500;700&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=David+Libre:wght@400;500;700&family=Kablammo&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/figure.png">
+    <title>Bizarro</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="./assets/figure.png" alt="" id="figura">
+            </a>
+            <h1 id="nome">BIZARRO</h1>
+        </div>
+
+        <div id="Search">
+            <input id="textSearch" type="text" placeholder="Procure por qualquer coisa!">
+            <img src="./assets/lupa.png" alt="" id="lupa">
+        </div>
+
+        <div id="acesso">
+            <img src="./assets/cart3.svg" alt="" class="carrinhoECurtidos">
+            <img src="./assets/heart.svg" alt="" class="carrinhoECurtidos">
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" class="d-block w-100" data-bs-interval="10000">
+                    <div id="promocao">
+                        <div id="containerPromocao">
+                            <h1 id="titulo">PROMOÇÃO!</h1>
+                            <p id="texto">Compre um pão mágico e ganhe uma caixa <br>
+                                <I>misteriosa</I>!
+                            </p>
+                        </div>
+                        <img src="./produtos/pao.png" alt="" id="imgPromocao">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <h1 id="desconto">Produtos com Desconto!</h1>
+                    <div class="ProDes">
+                        <a href="./produto.html">
+                            <div class="produto_desconto">
+                                <img src="produtos/pai ausente.jpeg" id="imagem_dsc" alt="pa">
+                                <h1>Pai Ausente</h1>
+                                <div class="precos">
+                                    <h3>R$288</h3>
+                                    <h6><u>De R$1200</u></h6>
+                                    <img src="./assets/cart-plus-fill.svg" class="produtoCarrinhoCurtidos">   
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./produto.html">
+                            <div class="produto_desconto">
+                                <img src="produtos/ovo pr‚-quebrado.jpg" id="imagem_dsc" alt="pa">
+                                <h1>Ovo Pré-quebrado</h1>
+                                <div class="precos">
+                                    <h3>R$147</h3>
+                                    <h6><u>De R$679</u></h6>
+                                    <img src="./assets/cart-plus-fill.svg" class="produtoCarrinhoCurtidos"> 
+                                      
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./produto.html">
+                            <div class="produto_desconto">
+                                <img src="produtos/oxigênio engarrafado.jpeg" id="imagem_dsc" alt="pa">
+                                <h1>Oxigênio Engarrafado</h1>
+                                <div class="precos">
+                                    <h3>R$455</h3>
+                                    <h6><u>De R$2880</u></h6>
+                                    <img src="./assets/cart-plus-fill.svg" class="produtoCarrinhoCurtidos">   
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="info">
+            <div class="dados">
+                <img src="./assets/person-circle.svg" alt="">
+                <p>Minha conta</p>
+            </div>
+
+            <div class="dados">
+                <img src="./assets/geo-alt-fill.svg" alt="">
+                <p>Minha localização</p>
+            </div>
+
+            <div class="dados">
+                <img src="./assets/credit-card-2-back.svg" alt="">
+                <p>Formas de pagamento</p>
+            </div>
+        </div>
+        <div id="produtosHoje">
+            <h1>Produtos de Hoje!</h1>
+            <button id="botaoCatalogo">
+                <a href="catalogo.html">
+                    <img src="assets/chevron-double-down.svg" alt="">
+                </a>
+            </button>
+
+        </div>
+
+        <ul id="lista">
+            <a href="./produto.html">
+                <li>
+                    <div class="produto">
+                        <img src="./produtos/fantasminhas 2.jpeg" class="produtoImg">
+                        <p>Fantasminhas ajudantes</p>
+                        <p><b>R$100,00</b></p>
+                        <img src="./assets/cart-plus-fill.svg">   
+                    </div>
+                </li>
+            </a>
+
+            <a href="./produto.html">
+                <li>
+                    <div class="produto">
+                        <img src="./produtos/bezerro bizarro.jpeg" class="produtoImg">
+                        <p>Bezerro bizarro</p>
+                        <p><b>R$450,00</b></p>
+                        <img src="./assets/cart-plus-fill.svg">   
+                    </div>
+                </li>
+            </a>
+            <a href="./produto.html">
+                <li>
+                    <div class="produto">
+                        <img src="./produtos/grama de alfinete.jpeg"  class="produtoImg">
+                        <p>Grama de alfinete</p>
+                        <p><b>R$150,00</b> p/alfinete</p>
+                            <img src="./assets/cart-plus-fill.svg">              
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

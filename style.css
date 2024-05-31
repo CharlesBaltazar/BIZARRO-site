@@ -1,0 +1,244 @@
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-family: "Oleo Script Swash Caps", system-ui;
+}
+
+body{
+    background-image: linear-gradient(to right, #382277,#09203D,#222677);
+    background-attachment: repeat;
+}
+ 
+header{
+    display: flex;
+    justify-content: space-between; 
+    background-color: #1C457D; 
+    gap: 6px;
+    height: 3.2cm; 
+    border: none;
+}
+
+/* PAG 1 */
+
+input{
+    color: #a458b9;
+}
+
+#logo{
+    display: flex; 
+    margin-top: 20px; 
+    margin-left: 35px;  
+}
+#figura{
+    height: 90px;
+}
+
+#nome{
+    font-family: "David Libre", serif;
+    margin-top: 25px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #CA6CE5;
+}
+
+a{
+    text-decoration: none;
+}
+
+#Search{
+    display: flex;
+    margin-top: 40px;
+    background-color: transparent;
+    height: 1cm;
+    width: 12cm;
+    border-radius: 50px;
+    border: 1px solid #CA6CE5;
+
+}
+::placeholder{
+    color: #CA6CE5;
+    opacity: 50%;
+}
+
+#textSearch{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 15cm;
+    margin: 10px;
+    letter-spacing: 1.5px;
+}
+
+#lupa{
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    height: 25px;
+}
+
+#acesso{
+    display: flex; 
+    margin-top: 35px;  
+    margin-right: 45px;
+    gap: 30px;
+}
+
+.carrinhoECurtidos{
+    height: 40px;
+}
+
+#promocao{
+    display: flex;
+    justify-content: space-between; 
+}
+
+#containerPromocao{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+#titulo{
+    color: #CA6CE5;
+    font-size: 60px;
+}
+
+#texto{
+    color: #a458b9;
+    font-size: 50px;
+}
+#texto i{
+    font-family: "Kablammo", system-ui;
+    color: #7f3693;
+}
+#imgPromocao{
+    height: 15cm;
+    mask-image: linear-gradient(to top, transparent 15%, #382277);
+}
+#info{
+    display: flex;
+    justify-content: space-around;
+}
+
+#desconto{
+    color: #CA6CE5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.produto_desconto{
+    background-image: linear-gradient(to bottom, #1C457D, #CA6CE5);
+    color: rgb(33, 33, 34);
+    margin: 5%;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+#imagem_dsc{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.ProDes{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.precos{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.precos h6{
+    color: rgb(66, 49, 77);
+}
+
+.dados:hover{
+    outline: solid #CA6CE5;
+
+}
+ 
+.dados{
+    background-color: #1C457D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    height: 10cm;
+    width: 7cm;
+}
+
+.dados p{
+    color: #CA6CE5;
+    font-size: 20px;
+    margin-top: 25px; 
+}
+
+#produtosHoje{
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+#produtosHoje h1{
+    color: #CA6CE5;
+}
+
+#botaoCatalogo{
+    background-color: transparent;
+    border: none;
+}
+#lista{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.produto{
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to bottom, #1C457D, #CA6CE5);
+    border-radius: 10px;
+
+}
+
+.produtoImg{
+    height: 200px;
+}
+
+
+.produto p{
+    font-family: "Oregano", cursive;
+    font-size: 30px;
+    color: black;
+    overflow:hidden;
+    
+}
+
+.produto:hover{
+    border: 1px solid #CA6CE5;
+}
+/* PAG 2 */
+
+.produtos{
+    background-color: #020F20;
+}
