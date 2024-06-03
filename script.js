@@ -1,20 +1,7 @@
-const barraDePesquisa = document.querySelector("#textSearch")//<input/>
-const lista = document.querySelector("#lista");//<ul></ul>
-const itens = document.querySelectorAll(".produto");//<li><li/>
+const carrinho = document.querySelector('#carrinho')
 
-
-barraDePesquisa.addEventListener("input", ()=>{
-    barraDePesquisa.toLowerCase()
-    itens.forEach((item)=>{
-         if(barraDePesquisa.value == item.textContent){
-            item.style.display = "block"
-         } else {
-             item.style.display = "none"
-        }
-
-         if(barraDePesquisa.value == ""){
-            item.style.display = "block"
-         }
-    })
-})
+// fazer o botão de carrinho (header) funcionar
+carrinho.onclick = function() {
+   window.location.href = "carrinho.html"
+}
 

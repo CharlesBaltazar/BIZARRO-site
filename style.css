@@ -88,6 +88,8 @@ a{
 
 .carrinhoECurtidos{
     height: 40px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 #promocao{
@@ -125,47 +127,71 @@ a{
     justify-content: space-around;
 }
 
-#desconto{
-    color: #CA6CE5;
+/* desconto */
+
+#fundo{
+    background-image: url(./assets/fundo.jpeg);
+    height: 15cm;
+    width: 100%;
+    mask-image: linear-gradient(to top, transparent 15%, #382277);
+    background-size: cover;
+    background-position: 0px -140px;
+    filter: brightness(40%);
+    justify-content: flex-start;
+    position: absolute;
+}
+
+#containerDesconto{
+    height: 15cm;
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 50px;
-    margin-top: 25px;
-}
-
-.produto_desconto{
-    background-image: linear-gradient(to bottom, #1C457D, #CA6CE5);
-    color: rgb(33, 33, 34);
-    margin: 5%;
-    border-radius: 10px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 25px;
+    justify-content: center;
+
+}
+#tituloDesconto{
+    color: #CA6CE5;
+    font-size: 60px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+#subDesconto{
+    color: #9f4fb5;
+    font-size: 35px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 100px;
 }
 
-#imagem_dsc{
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+.produto h1{
+    font-size: 22px;
+    color: rgb(33, 33, 34);
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .ProDes{
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
-}
+    position: relative;
 
+}
 .precos{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    color: black;
 }
 
 .precos h6{
     color: rgb(66, 49, 77);
+}
+
+.produtoCarrinhoCurtidos{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
 }
 
 .dados:hover{
@@ -230,7 +256,7 @@ a{
 
 .produto p{
     font-family: "Oregano", cursive;
-    font-size: 30px;
+    font-size: 22px;
     color: black;
     overflow:hidden;
     white-space: nowrap;
@@ -264,6 +290,7 @@ a{
 }
 
 .produtoCatalogo{
+    flex-direction: column;
     margin-top: 50px;
     margin-left: 50px;
     height: 300px;
